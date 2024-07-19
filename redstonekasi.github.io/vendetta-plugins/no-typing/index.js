@@ -1,1 +1,0 @@
-(function(n,a,o){"use strict";const r=o.findByProps("startTyping"),e=["startTyping","stopTyping"].map(t=>a.instead(t,r,()=>{})),s=()=>e.forEach(t=>t());return n.onUnload=s,n})({},vendetta.patcher,vendetta.metro);
