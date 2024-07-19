@@ -1,1 +1,0 @@
-{"name":"MessagePreview","description":"Adds a button to preview your message before sending it [redirect]","authors":[{"name":"nexpid","id":"853550207039832084"},{"name":"pylix","id":"492949202121261067"}],"main":"index.js","vendetta":{"icon":"ic_eye","original":"vendetta.nexpid.xyz/message-preview/"},"hash":"ade2fa7f89e9b06b9a1a4fe397aeacef8f7046cac811c157af947082d69116fa"}
