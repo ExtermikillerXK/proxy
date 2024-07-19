@@ -1,1 +1,0 @@
-{"name":"SplitLargeMessages","description":"Automatically splits messages larger than 2000/4000 characters","authors":[{"name":"sunnie","id":"406028027768733696"}],"main":"index.js","vendetta":{"icon":"ic_messages","original":"actuallythesun.github.io/vendetta-plugins/SplitLargeMessages/"},"hash":"2e5cf2f6d7e09e838a31f106a9150892e3da1e5f74652d0efe4235b50a5dc38c"}
