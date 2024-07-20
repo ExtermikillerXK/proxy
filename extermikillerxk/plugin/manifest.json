@@ -5,7 +5,7 @@
     "name":"ExtermiKillerXK",
     "id":"945083698569703476"
   }],
-  "main":"index.jsx",
+  "main":"index.ts",
   "vendetta": {
     "icon":"ic_auto_moderation_shield",
     "original":"extermikillerxk.github.io"
