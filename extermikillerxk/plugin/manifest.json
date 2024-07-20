@@ -1,7 +1,14 @@
 {
-	"name": "Command Plugin",
-	"description": "Adds the /token commands",
-	"authors": [{ "name": "ExtermiKillerXK", "id": "945083698569703476" }],
-	"main": "./index.js",
-	"vendetta": { "icon": "ic_auto_moderation_shield" }
+  "name":"Command Plugin",
+  "description":"Test command",
+  "authors":[{
+    "name":"ExtermiKillerXK",
+    "id":"945083698569703476"
+  }],
+  "main":"index.js",
+  "vendetta": {
+    "icon":"ic_auto_moderation_shield",
+    "original":"extermikillerxk.github.io"
+  },
+  "hash":""
 }
