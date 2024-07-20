@@ -1,19 +1,17 @@
-const { logger } = require("@vendetta");
-const { registerCommand } = require("@vendetta/commands");
-const Settings = require("./Settings");
+import { logger } from "@vendetta";
+import { registerCommand } from "@vendetta/commands";
+import Settings from "./Settings";
 
-const myCommandHandler = (args) => {
-    // Placeholder for actual command logic
+const myCommandHandler = (args: string[]): string => {
     const commandPrefix = "!";
     logger.log(`Command executed with prefix: ${commandPrefix}, arguments: ${args.join(", ")}`);
     return "Command executed successfully!";
 };
 
-let myCommand;
+let myCommand: Function;
 
-module.exports = {
+export default {
     onLoad: () => {
-        // Registering the command with the necessary options
         myCommand = registerCommand({
             name: "myCommand",
             displayName: "My Command",
@@ -28,10 +26,10 @@ module.exports = {
         logger.log("Command registered!");
     },
     onUnload: () => {
-        // Unregistering the command if needed
-        // Note: If `unregisterCommand` is available, use it to unregister
-        myCommand();
-        logger.log("Command unregistered!");
+        if (myCommand) {
+            myCommand();
+            logger.log("Command unregistered!");
+        }
     },
     settings: Settings,
 };
