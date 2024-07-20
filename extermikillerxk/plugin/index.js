@@ -9,7 +9,7 @@ const myCommandHandler = (args) => {
 };
 
 export default {
-    onLoad: () => {
+    onLoad() {
         logger.log("Hello world!");
         commands.registerCommand({
             name: "myCommand",
@@ -17,7 +17,7 @@ export default {
             execute: myCommandHandler,
         });
     },
-    onUnload: () => {
+    onUnload() {
         logger.log("Goodbye, world.");
         commands.unregisterCommand("myCommand");
     },
