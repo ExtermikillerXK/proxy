@@ -1,4 +1,4 @@
-import { useState } from "react";
+const { useState } = require("react");
 
 const Settings = ({ updateSettings, settings }) => {
     const [commandPrefix, setCommandPrefix] = useState(settings.commandPrefix || "!");
@@ -19,4 +19,4 @@ const Settings = ({ updateSettings, settings }) => {
     );
 };
 
-export default Settings;
+module.exports = Settings;
