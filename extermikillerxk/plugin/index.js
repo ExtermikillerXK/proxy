@@ -1,8 +1,9 @@
-import { logger, commands, settings } from "@vendetta";
+import { logger, commands } from "@vendetta";
 import Settings from "./Settings";
 
 const myCommandHandler = (args) => {
-    const commandPrefix = settings.get("commandPrefix") || "!";
+    // Default to "!" if no prefix is found
+    const commandPrefix = "!";
     logger.log(`Command executed with prefix: ${commandPrefix}, arguments: ${args.join(", ")}`);
     return "Command executed successfully!";
 };
