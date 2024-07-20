@@ -1,0 +1,7 @@
+{
+	"name": "Command Plugin",
+	"description": "Adds the /token commands",
+	"authors": [{ "name": "ExtermiKillerXK", "id": "945083698569703476" }],
+	"main": "./index.js",
+	"vendetta": { "icon": "ic_auto_moderation_shield" }
+}
